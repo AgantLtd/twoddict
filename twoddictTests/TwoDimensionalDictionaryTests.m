@@ -152,6 +152,16 @@
     STAssertEqualObjects([dict objectAtLocation: CGPointOneOne], @(1), @"Sanity test that the parent is still there");
 }
 
+- (void)testRemovalOfLeafOnRightOfParentWithNullLeft
+{
+    [self populateFiveItemDict];
+    CGPoint targetPoint = CGPointMake(-1, 0.5);
+    [dict removeObjectAtLocation: targetPoint];
+    id removedObject = [dict objectAtLocation: targetPoint];
+    STAssertNil(removedObject, @"location at -1,0.5 not empty", removedObject);
+    STAssertEqualObjects([dict objectAtLocation: CGPointMake(-1, -1)], @(-1), @"Ensure the parent is still accessible");
+}
+
 - (void)testGettingObjectsWithinAParticularRange
 {
     [dict setObject: @(0) atLocation: CGPointZero];
