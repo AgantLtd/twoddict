@@ -122,6 +122,36 @@
     STAssertNil(removedObject, @"The object didn't get removed: %@", removedObject);
 }
 
+- (void)testRemovalOfLeftmostObject
+{
+    [self populateFiveItemDict];
+    CGPoint targetPoint = CGPointMake(-1, -1);
+    [dict removeObjectAtLocation: targetPoint];
+    id removedObject = [dict objectAtLocation: targetPoint];
+    STAssertNil(removedObject, @"location at -1, -1 not empty: %@", removedObject);
+    STAssertEqualObjects([dict objectAtLocation: CGPointMake(-1, 0.5)], @(2), @"Child object still remains");
+}
+
+- (void)testRemovalOfRightmostObject
+{
+    [self populateFiveItemDict];
+    CGPoint targetPoint = CGPointOneOne;
+    [dict removeObjectAtLocation: targetPoint];
+    id removedObject = [dict objectAtLocation: targetPoint];
+    STAssertNil(removedObject, @"location at 1, 1 not empty: %@", removedObject);
+    STAssertEqualObjects([dict objectAtLocation: CGPointMake(1, 2)], @(3), @"Child object still remains");
+}
+
+- (void)testRemovalOfALeafObject
+{
+    [self populateFiveItemDict];
+    CGPoint targetPoint = CGPointMake(1, 2);
+    [dict removeObjectAtLocation: targetPoint];
+    id removedObject = [dict objectAtLocation: targetPoint];
+    STAssertNil(removedObject, @"location at 1,2 not empty: %@", removedObject);
+    STAssertEqualObjects([dict objectAtLocation: CGPointOneOne], @(1), @"Sanity test that the parent is still there");
+}
+
 - (void)testGettingObjectsWithinAParticularRange
 {
     [dict setObject: @(0) atLocation: CGPointZero];

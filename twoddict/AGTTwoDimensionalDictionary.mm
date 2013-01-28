@@ -129,26 +129,33 @@ class DictionaryNode
 
     void replace(DictionaryNode *current, DictionaryNode *replacement)
     {
+        DictionaryNode *temporary;
         if (current == left)
         {
-            delete left;
-            left = current;
+            temporary = left;
+            left = replacement;
         }
         else if (current == right)
         {
-            delete right;
-            right = current;
+            temporary = right;
+            right = replacement;
         }
         else
         {
             throw UnknownNodeException();
         }
+        if (replacement)
+        {
+            replacement->parent = this;
+        }
+        temporary->clearLinks();
+        delete temporary;
     }
 
     DictionaryNode *remove(CGPoint location)
     {
         DictionaryNode *next = this;
-        while (next != NULL && (next->point.x != location.x || this->point.y != location.y))
+        while (next != NULL && (next->point.x != location.x || next->point.y != location.y))
         {
             next = next->findNext(location);
         }
