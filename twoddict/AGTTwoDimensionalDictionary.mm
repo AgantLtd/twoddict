@@ -155,7 +155,7 @@ class DictionaryNode
     DictionaryNode *remove(CGPoint location)
     {
         DictionaryNode *next = this;
-        while (next != NULL && (next->point.x != location.x || next->point.y != location.y))
+        while (next != NULL && !CGPointEqualToPoint(location, next->point))
         {
             next = next->findNext(location);
         }
