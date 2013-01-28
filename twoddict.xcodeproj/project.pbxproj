@@ -16,7 +16,8 @@
 		74A8142516B6CDCD00FC1E5E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A8142416B6CDCD00FC1E5E /* SenTestingKit.framework */; };
 		74A8142616B6CDCD00FC1E5E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A8140616B6CDCD00FC1E5E /* Cocoa.framework */; };
 		74A8142E16B6CDCD00FC1E5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74A8142C16B6CDCD00FC1E5E /* InfoPlist.strings */; };
-		74A8143116B6CDCD00FC1E5E /* twoddictTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A8143016B6CDCD00FC1E5E /* twoddictTests.m */; };
+		74A8143C16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm in Sources */ = {isa = PBXBuildFile; fileRef = 74A8143B16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm */; };
+		74A8143F16B6CDF300FC1E5E /* TwoDimensionalDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A8143E16B6CDF300FC1E5E /* TwoDimensionalDictionaryTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +48,10 @@
 		74A8142416B6CDCD00FC1E5E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		74A8142B16B6CDCD00FC1E5E /* twoddictTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "twoddictTests-Info.plist"; sourceTree = "<group>"; };
 		74A8142D16B6CDCD00FC1E5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		74A8142F16B6CDCD00FC1E5E /* twoddictTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twoddictTests.h; sourceTree = "<group>"; };
-		74A8143016B6CDCD00FC1E5E /* twoddictTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twoddictTests.m; sourceTree = "<group>"; };
+		74A8143A16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTTwoDimensionalDictionary.h; sourceTree = "<group>"; };
+		74A8143B16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AGTTwoDimensionalDictionary.mm; sourceTree = "<group>"; };
+		74A8143D16B6CDF300FC1E5E /* TwoDimensionalDictionaryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoDimensionalDictionaryTests.h; sourceTree = "<group>"; };
+		74A8143E16B6CDF300FC1E5E /* TwoDimensionalDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoDimensionalDictionaryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		74A8140C16B6CDCD00FC1E5E /* twoddict */ = {
 			isa = PBXGroup;
 			children = (
+				74A8143A16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.h */,
+				74A8143B16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm */,
 				74A8141816B6CDCD00FC1E5E /* AGTAppDelegate.h */,
 				74A8141916B6CDCD00FC1E5E /* AGTAppDelegate.m */,
 				74A8141B16B6CDCD00FC1E5E /* MainMenu.xib */,
@@ -137,8 +142,8 @@
 		74A8142916B6CDCD00FC1E5E /* twoddictTests */ = {
 			isa = PBXGroup;
 			children = (
-				74A8142F16B6CDCD00FC1E5E /* twoddictTests.h */,
-				74A8143016B6CDCD00FC1E5E /* twoddictTests.m */,
+				74A8143D16B6CDF300FC1E5E /* TwoDimensionalDictionaryTests.h */,
+				74A8143E16B6CDF300FC1E5E /* TwoDimensionalDictionaryTests.m */,
 				74A8142A16B6CDCD00FC1E5E /* Supporting Files */,
 			);
 			path = twoddictTests;
@@ -264,6 +269,7 @@
 			files = (
 				74A8141316B6CDCD00FC1E5E /* main.m in Sources */,
 				74A8141A16B6CDCD00FC1E5E /* AGTAppDelegate.m in Sources */,
+				74A8143C16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74A8143116B6CDCD00FC1E5E /* twoddictTests.m in Sources */,
+				74A8143F16B6CDF300FC1E5E /* TwoDimensionalDictionaryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
