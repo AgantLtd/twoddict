@@ -7,59 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74A8140716B6CDCD00FC1E5E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A8140616B6CDCD00FC1E5E /* Cocoa.framework */; };
-		74A8141116B6CDCD00FC1E5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74A8140F16B6CDCD00FC1E5E /* InfoPlist.strings */; };
-		74A8141316B6CDCD00FC1E5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A8141216B6CDCD00FC1E5E /* main.m */; };
-		74A8141716B6CDCD00FC1E5E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 74A8141516B6CDCD00FC1E5E /* Credits.rtf */; };
-		74A8141A16B6CDCD00FC1E5E /* AGTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A8141916B6CDCD00FC1E5E /* AGTAppDelegate.m */; };
-		74A8141D16B6CDCD00FC1E5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74A8141B16B6CDCD00FC1E5E /* MainMenu.xib */; };
+		745B7FCB16F37ABE0029BA72 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A8140616B6CDCD00FC1E5E /* Cocoa.framework */; };
+		745B7FD516F37ADA0029BA72 /* AGTTwoDimensionalDictionary.mm in Sources */ = {isa = PBXBuildFile; fileRef = 74A8143B16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm */; };
 		74A8142516B6CDCD00FC1E5E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A8142416B6CDCD00FC1E5E /* SenTestingKit.framework */; };
 		74A8142616B6CDCD00FC1E5E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A8140616B6CDCD00FC1E5E /* Cocoa.framework */; };
 		74A8142E16B6CDCD00FC1E5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74A8142C16B6CDCD00FC1E5E /* InfoPlist.strings */; };
-		74A8143C16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm in Sources */ = {isa = PBXBuildFile; fileRef = 74A8143B16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm */; };
 		74A8143F16B6CDF300FC1E5E /* TwoDimensionalDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A8143E16B6CDF300FC1E5E /* TwoDimensionalDictionaryTests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		74A8142716B6CDCD00FC1E5E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74A813F916B6CDCD00FC1E5E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 74A8140116B6CDCD00FC1E5E;
-			remoteInfo = twoddict;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		74A8140216B6CDCD00FC1E5E /* twoddict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twoddict.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		745B7FCA16F37ABE0029BA72 /* AGTTwoDDictionary.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = AGTTwoDDictionary.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		745B7FCE16F37ABE0029BA72 /* AGTTwoDDictionary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AGTTwoDDictionary-Prefix.pch"; sourceTree = "<group>"; };
 		74A8140616B6CDCD00FC1E5E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		74A8140916B6CDCD00FC1E5E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		74A8140A16B6CDCD00FC1E5E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		74A8140B16B6CDCD00FC1E5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		74A8140E16B6CDCD00FC1E5E /* twoddict-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "twoddict-Info.plist"; sourceTree = "<group>"; };
-		74A8141016B6CDCD00FC1E5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		74A8141216B6CDCD00FC1E5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		74A8141416B6CDCD00FC1E5E /* twoddict-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "twoddict-Prefix.pch"; sourceTree = "<group>"; };
-		74A8141616B6CDCD00FC1E5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		74A8141816B6CDCD00FC1E5E /* AGTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGTAppDelegate.h; sourceTree = "<group>"; };
-		74A8141916B6CDCD00FC1E5E /* AGTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGTAppDelegate.m; sourceTree = "<group>"; };
-		74A8141C16B6CDCD00FC1E5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		74A8142316B6CDCD00FC1E5E /* twoddictTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twoddictTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A8142416B6CDCD00FC1E5E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		74A8142B16B6CDCD00FC1E5E /* twoddictTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "twoddictTests-Info.plist"; sourceTree = "<group>"; };
 		74A8142D16B6CDCD00FC1E5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		74A8143A16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTTwoDimensionalDictionary.h; sourceTree = "<group>"; };
-		74A8143B16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AGTTwoDimensionalDictionary.mm; sourceTree = "<group>"; };
+		74A8143A16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTTwoDimensionalDictionary.h; path = ../twoddict/AGTTwoDimensionalDictionary.h; sourceTree = "<group>"; };
+		74A8143B16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AGTTwoDimensionalDictionary.mm; path = ../twoddict/AGTTwoDimensionalDictionary.mm; sourceTree = "<group>"; };
 		74A8143D16B6CDF300FC1E5E /* TwoDimensionalDictionaryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoDimensionalDictionaryTests.h; sourceTree = "<group>"; };
 		74A8143E16B6CDF300FC1E5E /* TwoDimensionalDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoDimensionalDictionaryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		74A813FF16B6CDCD00FC1E5E /* Frameworks */ = {
+		745B7FC716F37ABE0029BA72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74A8140716B6CDCD00FC1E5E /* Cocoa.framework in Frameworks */,
+				745B7FCB16F37ABE0029BA72 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,11 +53,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		745B7FCC16F37ABE0029BA72 /* AGTTwoDDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				74A8143A16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.h */,
+				74A8143B16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm */,
+				745B7FCD16F37ABE0029BA72 /* Supporting Files */,
+			);
+			path = AGTTwoDDictionary;
+			sourceTree = "<group>";
+		};
+		745B7FCD16F37ABE0029BA72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				745B7FCE16F37ABE0029BA72 /* AGTTwoDDictionary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		74A813F716B6CDCD00FC1E5E = {
 			isa = PBXGroup;
 			children = (
-				74A8140C16B6CDCD00FC1E5E /* twoddict */,
 				74A8142916B6CDCD00FC1E5E /* twoddictTests */,
+				745B7FCC16F37ABE0029BA72 /* AGTTwoDDictionary */,
 				74A8140516B6CDCD00FC1E5E /* Frameworks */,
 				74A8140316B6CDCD00FC1E5E /* Products */,
 			);
@@ -88,8 +84,8 @@
 		74A8140316B6CDCD00FC1E5E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74A8140216B6CDCD00FC1E5E /* twoddict.app */,
 				74A8142316B6CDCD00FC1E5E /* twoddictTests.octest */,
+				745B7FCA16F37ABE0029BA72 /* AGTTwoDDictionary.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,31 +110,6 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		74A8140C16B6CDCD00FC1E5E /* twoddict */ = {
-			isa = PBXGroup;
-			children = (
-				74A8143A16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.h */,
-				74A8143B16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm */,
-				74A8141816B6CDCD00FC1E5E /* AGTAppDelegate.h */,
-				74A8141916B6CDCD00FC1E5E /* AGTAppDelegate.m */,
-				74A8141B16B6CDCD00FC1E5E /* MainMenu.xib */,
-				74A8140D16B6CDCD00FC1E5E /* Supporting Files */,
-			);
-			path = twoddict;
-			sourceTree = "<group>";
-		};
-		74A8140D16B6CDCD00FC1E5E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				74A8140E16B6CDCD00FC1E5E /* twoddict-Info.plist */,
-				74A8140F16B6CDCD00FC1E5E /* InfoPlist.strings */,
-				74A8141216B6CDCD00FC1E5E /* main.m */,
-				74A8141416B6CDCD00FC1E5E /* twoddict-Prefix.pch */,
-				74A8141516B6CDCD00FC1E5E /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		74A8142916B6CDCD00FC1E5E /* twoddictTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,23 +131,33 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		745B7FC816F37ABE0029BA72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		74A8140116B6CDCD00FC1E5E /* twoddict */ = {
+		745B7FC916F37ABE0029BA72 /* AGTTwoDDictionary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74A8143416B6CDCD00FC1E5E /* Build configuration list for PBXNativeTarget "twoddict" */;
+			buildConfigurationList = 745B7FD416F37ABE0029BA72 /* Build configuration list for PBXNativeTarget "AGTTwoDDictionary" */;
 			buildPhases = (
-				74A813FE16B6CDCD00FC1E5E /* Sources */,
-				74A813FF16B6CDCD00FC1E5E /* Frameworks */,
-				74A8140016B6CDCD00FC1E5E /* Resources */,
+				745B7FC616F37ABE0029BA72 /* Sources */,
+				745B7FC716F37ABE0029BA72 /* Frameworks */,
+				745B7FC816F37ABE0029BA72 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = twoddict;
-			productName = twoddict;
-			productReference = 74A8140216B6CDCD00FC1E5E /* twoddict.app */;
-			productType = "com.apple.product-type.application";
+			name = AGTTwoDDictionary;
+			productName = AGTTwoDDictionary;
+			productReference = 745B7FCA16F37ABE0029BA72 /* AGTTwoDDictionary.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 		74A8142216B6CDCD00FC1E5E /* twoddictTests */ = {
 			isa = PBXNativeTarget;
@@ -190,7 +171,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				74A8142816B6CDCD00FC1E5E /* PBXTargetDependency */,
 			);
 			name = twoddictTests;
 			productName = twoddictTests;
@@ -219,23 +199,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74A8140116B6CDCD00FC1E5E /* twoddict */,
 				74A8142216B6CDCD00FC1E5E /* twoddictTests */,
+				745B7FC916F37ABE0029BA72 /* AGTTwoDDictionary */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		74A8140016B6CDCD00FC1E5E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				74A8141116B6CDCD00FC1E5E /* InfoPlist.strings in Resources */,
-				74A8141716B6CDCD00FC1E5E /* Credits.rtf in Resources */,
-				74A8141D16B6CDCD00FC1E5E /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		74A8142016B6CDCD00FC1E5E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,13 +233,11 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		74A813FE16B6CDCD00FC1E5E /* Sources */ = {
+		745B7FC616F37ABE0029BA72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74A8141316B6CDCD00FC1E5E /* main.m in Sources */,
-				74A8141A16B6CDCD00FC1E5E /* AGTAppDelegate.m in Sources */,
-				74A8143C16B6CDE100FC1E5E /* AGTTwoDimensionalDictionary.mm in Sources */,
+				745B7FD516F37ADA0029BA72 /* AGTTwoDimensionalDictionary.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,39 +251,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		74A8142816B6CDCD00FC1E5E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 74A8140116B6CDCD00FC1E5E /* twoddict */;
-			targetProxy = 74A8142716B6CDCD00FC1E5E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		74A8140F16B6CDCD00FC1E5E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74A8141016B6CDCD00FC1E5E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		74A8141516B6CDCD00FC1E5E /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74A8141616B6CDCD00FC1E5E /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		74A8141B16B6CDCD00FC1E5E /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74A8141C16B6CDCD00FC1E5E /* en */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
 		74A8142C16B6CDCD00FC1E5E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -327,6 +263,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		745B7FD216F37ABE0029BA72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AGTTwoDDictionary/AGTTwoDDictionary-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		745B7FD316F37ABE0029BA72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AGTTwoDDictionary/AGTTwoDDictionary-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		74A8143216B6CDCD00FC1E5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -380,30 +344,6 @@
 			};
 			name = Release;
 		};
-		74A8143516B6CDCD00FC1E5E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "twoddict/twoddict-Prefix.pch";
-				INFOPLIST_FILE = "twoddict/twoddict-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		74A8143616B6CDCD00FC1E5E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "twoddict/twoddict-Prefix.pch";
-				INFOPLIST_FILE = "twoddict/twoddict-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 		74A8143816B6CDCD00FC1E5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -411,7 +351,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "twoddict/twoddict-Prefix.pch";
+				GCC_PREFIX_HEADER = "AGTTwoDDictionary/AGTTwoDDictionary-Prefix.pch";
 				INFOPLIST_FILE = "twoddictTests/twoddictTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -426,7 +366,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "twoddict/twoddict-Prefix.pch";
+				GCC_PREFIX_HEADER = "AGTTwoDDictionary/AGTTwoDDictionary-Prefix.pch";
 				INFOPLIST_FILE = "twoddictTests/twoddictTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -437,6 +377,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		745B7FD416F37ABE0029BA72 /* Build configuration list for PBXNativeTarget "AGTTwoDDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745B7FD216F37ABE0029BA72 /* Debug */,
+				745B7FD316F37ABE0029BA72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		74A813FC16B6CDCD00FC1E5E /* Build configuration list for PBXProject "twoddict" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -446,14 +394,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74A8143416B6CDCD00FC1E5E /* Build configuration list for PBXNativeTarget "twoddict" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				74A8143516B6CDCD00FC1E5E /* Debug */,
-				74A8143616B6CDCD00FC1E5E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		74A8143716B6CDCD00FC1E5E /* Build configuration list for PBXNativeTarget "twoddictTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -461,6 +401,7 @@
 				74A8143916B6CDCD00FC1E5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

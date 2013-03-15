@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AGTTwoDDictionary' target in the 'AGTTwoDDictionary' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
